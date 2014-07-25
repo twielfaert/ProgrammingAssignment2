@@ -1,7 +1,8 @@
 ## Preserves the inverse of an input matrix and retrieves it
 ## when called.
 
-## Creates a list of functions to create and store a cached matrix.
+## Creates a list of functions to create and store a 
+## matrix and its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -30,5 +31,4 @@ cacheSolve <- function(x, ...) {
   data <- x$get()
   m <- solve(data, ...)
   x$setinverse(m)
-
 }
